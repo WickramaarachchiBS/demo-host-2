@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="valentines-day-card.css">
-    <title>Document</title>
+    <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+    <!-- <link rel="icon" type="image/gif" href="123.gif"> -->
+    <title>💖 Valentine's Card</title>
   </head>
   <body>
     <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -24,7 +26,7 @@
           <div class="envelope tossing">
               <div class="envelope__side envelope__side--top"></div>
               <div class="envelope__card">
-                <p class="enveloper__card-text">Happy <br/> Valentine's <br/> Day!❤️</p>
+                <p class="enveloper__card-text">Happy <br/> Valentine's <br/>Day Sudu❤️</p>
               </div>
               <div class="envelope__side envelope__side--right"></div>
               <div class="envelope__side envelope__side--left"></div>
@@ -36,5 +38,15 @@
 
 <script src="jquery.js"></script>
 <script src="valentines-day-card.js"></script>
-  </body>
+<script>
+  const frames = ["💖", "❤️", "💕", "💞", "💘", "💓"]; // Different heart emojis
+  let index = 0;
+
+  setInterval(() => {
+    document.title = frames[index] + " Valentine's Card";
+    index = (index + 1) % frames.length;
+  }, 500); // Change every 500ms
+</script>
+
+</body>
 </html>
